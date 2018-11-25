@@ -50,6 +50,11 @@ body {
 
 .row {
     display: flex;
+    margin-bottom: 20px;
+}
+
+.column {
+    width: 50%;
 }
 
 .photo {
@@ -73,7 +78,7 @@ body {
 }
 
 .block {
-    margin: 40px 0 0 150px;
+    margin-left: 150px;
 }
 
 .h2 {
@@ -94,7 +99,7 @@ body {
 }
 
 a {
-    color: #393939;
+    color: #0E81BC;
     font-size: 18px;
     text-decoration: none;
 }
@@ -103,4 +108,25 @@ a:hover {
     color: #159CE2;
     font-size: 18px;
     text-decoration: underline;
+}
+
+@media (max-width:540px)  {
+    .main {
+        margin: 0 auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .block {
+        margin: 0;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+    .column:last-child {
+        margin: 0;
+    }
 }
